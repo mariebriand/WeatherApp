@@ -1,6 +1,6 @@
 # Notes #
 
-API : used for <a name="Marie"></a>sending</a> and receiving data between applications.
+API : used for [Marie](#marie)</a>sending</a> and receiving data between applications.
 
 Application: (toutes les applicationssont des logiciels)
 
@@ -16,5 +16,4 @@ Praesent faucibus dui dictum turpis vehicula, feugiat blandit tellus mattis. Int
 
 Donec lectus quam, lobortis ut malesuada ut, viverra at ipsum. Duis lacinia ipsum sed urna tristique, in consectetur erat elementum. Nunc fermentum, lorem ut egestas pretium, massa nibh viverra tellus, vel rhoncus nibh neque nec erat. Aenean quam sapien, consectetur ac ultricies ac, fermentum id magna. Cras eu elit sollicitudin, cursus neque id, interdum magna. Nam felis enim, blandit non varius non, vulputate sit amet urna. Nunc vehicula, nisl vitae malesuada sodales, neque dolor tempus mi, quis elementum odio arcu sit amet urna. Duis ut odio nec urna vulputate tempus at et purus. Praesent ultricies magna venenatis sapien interdum, quis interdum erat pretium.
 
-[Marie](#Marie)
-f
+### Marie ###
