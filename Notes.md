@@ -1,8 +1,6 @@
 # Notes #
 
-API : used for <a name="abcd"></a>sending</a>
-
-Source: https://prograide.com/pregunta/5868/comment-creer-un-lien-vers-une-ancre-nommee-dans-multimarkdown and receiving data between applications.
+API : used for <a name="abcd"></a>sending</a> and receiving data between applications.
 
 Application: (toutes les applicationssont des logiciels)
 
