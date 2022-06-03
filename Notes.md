@@ -12,8 +12,8 @@ requêtes HTTP pour obtenir (GET), placer (PUT), publier (POST) et supprimer (DE
 
 ### API Fetch ###
 
-L'API Fetch fournit une interface JavaScript pour l'accès et la manipulation des parties de la pipeline HTTP, comme les
+L'API Fetch fournit une interface JavaScript pour l'accès et la manipulation des parties de la **pipeline HTTP**, comme les
 requêtes et les réponses. Cela fournit aussi une méthode globale fetch() qui procure un moyen facile et logique de
-récupérer des ressources à travers le réseau de manière asynchrone (qui n'est pas synchrone, i.e qui ne se produit pas
+récupérer des ressources à travers le réseau de manière *asynchrone* (qui n'est pas synchrone, i.e qui ne se produit pas
 dans le même temps ou à des intervalles de temps égaux.)
 
