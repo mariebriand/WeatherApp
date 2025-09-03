@@ -3,10 +3,16 @@ version: '3.8'
 services:
   php:
     build:
-      context: ./docker/php
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: docker/php/Dockerfile
     volumes:
-      - .:/var/www/html
+      - .:/var/www/html:cached       # Mount project code for live reload
+      - vendor:/var/www/html/vendor  # Named volume for dependencies
     ports:
       - "8000:8000"
-    command: php -S 0.0.0.0:8000 -t public
+    environment:
+      COMPOSER_ALLOW_SUPERUSER: "1"
+      # CMD from Dockerfile is used by default
+
+volumes:
+  vendor:
