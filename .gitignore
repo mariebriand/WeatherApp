@@ -4,9 +4,11 @@
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
-/var/
-/vendor/
 ###< symfony/framework-bundle ###
+
+# Clé privée de déchiffrement
+config/secrets/dev/dev.decrypt.private.php
+#
 
 ###> JetBrains IDE ###
 /.idea/*
@@ -56,6 +58,7 @@ db-data/
 
 ###> PHP ###
 # Composer vendor dir
+/var/
 /vendor/
 
 # PHPUnit
@@ -63,3 +66,8 @@ db-data/
 /phpunit.xml.dist
 /.phpunit.result.cache
 ###< PHP ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
