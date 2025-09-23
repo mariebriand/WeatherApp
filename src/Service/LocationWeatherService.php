@@ -4,31 +4,23 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use Symfony\Contracts\HttpClient\HttpClientInterface;
-
-class WeatherService
+class LocationWeatherService
 {
-    private HttpClientInterface $client;
-    private string $apiKey;
-
     public function __construct(HttpClientInterface $client, string $apiKey)
     {
         $this->client = $client;
         $this->apiKey = $apiKey;
     }
 
-    public function getWeather(string $city): ?array
+    public function getWeather(array $lat, array $lon): ?array
     {
-        $city = trim($city);
-
-        if (!preg_match('/^[a-zA-Z\s-]+$/', $city)) {
-            return null;
-        }
+        // @TODO : need to sanitize parameters
 
         try {
             $response = $this->client->request('GET', 'https://api.openweathermap.org/data/2.5/weather', [
                 'query' => [
-                    'q' => $city,
+                    'lat' => $lat,
+                    'lon' => $lon,
                     'appid' => $this->apiKey,
                     'units' => 'metric'
                 ]
@@ -39,8 +31,6 @@ class WeatherService
             return [
                 'city' => $data['name'],
                 'temp' => $data['main']['temp'],
-                'desc' => $data['weather'][0]['description'],
-                'icon' => $data['weather'][0]['icon'],
             ];
         } catch (\Exception $e) {
             return null;

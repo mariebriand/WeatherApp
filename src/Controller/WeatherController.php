@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class WeatherController extends AbstractController
 {
-    #[Route('/weather', name: 'app_weather')]
+    #[Route(path: '/weather', name: 'app_weather')]
     public function __invoke(Request $request, WeatherService $getWeather): Response
     {
         $city = $request->query->get('city');

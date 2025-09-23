@@ -26,6 +26,10 @@ services:
     App\Service\WeatherService:
         arguments:
             $apiKey: '%openweathermap.api_key%'
+    # Explicit LocationWeatherService wiring with API key
+    App\Service\LocationWeatherService:
+        arguments:
+            $apiKey: '%openweathermap.api_key%'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
