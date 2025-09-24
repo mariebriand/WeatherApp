@@ -23,7 +23,7 @@ services:
             - '../src/Kernel.php'
 
     # Explicit WeatherService wiring with API key
-    App\Service\WeatherService:
+    App\Service\CityWeatherService:
         arguments:
             $apiKey: '%openweathermap.api_key%'
     # Explicit LocationWeatherService wiring with API key

@@ -6,7 +6,7 @@ namespace App\Service;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-class WeatherService
+class CityWeatherService
 {
     private HttpClientInterface $client;
     private string $apiKey;
@@ -17,7 +17,7 @@ class WeatherService
         $this->apiKey = $apiKey;
     }
 
-    public function getWeather(string $city): ?array
+    public function getCityWeather(string $city): ?array
     {
         $city = trim($city);
 

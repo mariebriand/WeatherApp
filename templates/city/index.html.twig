@@ -21,7 +21,7 @@
 
         <h1>Weather App</h1>
 
-        <form method="get" action="{{ path('app_weather') }}">
+        <form method="get" action="{{ path('city') }}">
             <div>
                 <input type="text" name="city" class="form-control" placeholder="Enter city name" value="{{ city|e }}">
                 <button>Check Weather</button>
